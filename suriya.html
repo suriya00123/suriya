@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Stylish Web Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #ff6a00, #ee0979, #6a11cb);
+            background-size: 300% 300%;
+            animation: gradientBG 8s ease infinite;
+            color: white;
+        }
+
+        @keyframes gradientBG {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        }
+
+        header h1 {
+            font-size: 42px;
+            color: #ffcc00;
+            letter-spacing: 2px;
+        }
+
+        .bus-img {
+            display: block;
+            margin: 40px auto;
+            width: 60%;
+            max-width: 700px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+            transition: 0.4s;
+        }
+
+        .bus-img:hover {
+            transform: scale(1.08);
+        }
+
+        .profile {
+            width: 80%;
+            max-width: 700px;
+            margin: 30px auto;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+
+        .profile h1 {
+            color: #00ffcc;
+            margin-bottom: 20px;
+        }
+
+        .profile h3, .profile h4 {
+            margin: 10px 0;
+            font-weight: normal;
+        }
+
+        .profile a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: linear-gradient(45deg, #ff4d4d, #ffcc00);
+            color: black;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .profile a:hover {
+            transform: scale(1.1);
+            background: linear-gradient(45deg, #00ffcc, #00ccff);
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Welcome to My Web Page</h1>
+</header>
+
+<img src="a.jpg" class="bus-img" alt="Bus">
+
+<div class="profile">
+    <h1>MY NAME IS SURIYA</h1>
+
+    <h3>NAME : SURIYA.E</h3>
+    <h3>AGE : 17</h3>
+    <h3>MOBILE : 83448 44891</h3>
+    <h3>EMAIL : esuriya37@gmail.com</h3>
+
+    <h4>
+        ADDRESS : 137(1), Road St, Murukathampoondi,<br>
+        Tiruvannamalai Dist, Tamil Nadu - 604 407
+    </h4>
+
+    <a href="https://www.instagram.com/_s_u_r_i_y_a_001?igsh=OHVrMGdrdWZnY3Ru" target="_blank">
+        Visit My Insta profile
+    </a>
+</div>
+
+</body>
+</html>
